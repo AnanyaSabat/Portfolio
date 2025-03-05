@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover{
+    color: #007bff;
+}
+
+/*Responsive Navbar*/
+
+.menu-toggle{
+    display: none;
+}
+.menu-label{
+    display:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .menu-label{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #444);
+    color: white;
+    text-align: center;
+    padding: 100px 20px 50px; /* Navbar space fix */
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Heading & Subheading */
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Hire Me Button */
+.hire-me {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+}
+
+.hire-me:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Download CV Button */
+.download-cv {
+    background: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+}
+
+.download-cv:hover {
+    background: #ffcc00;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile {
+        padding-top: 120px; /* Extra space for navbar on small screens */
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+#education{
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+}
+
+#education h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.education-card{
+    background: #fff;
+    border: 2px solid#ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 40px 8pxrgba(0,0,0,0.304);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.education-card h3{
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+.education-card p{
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px;
+}
+
+.education-card strong{
+    color: #000;
+}
